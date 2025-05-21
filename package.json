@@ -12,6 +12,7 @@
     "deploy:preview": "vercel",
     "deploy:prod": "vercel --prod",
     "deploy:force": "./scripts/force-deploy.sh",
+    "deploy:hook": "node vercel-deploy-hook.js",
     "setup:env": "./scripts/setup-vercel-env.sh",
     "vercel-build": "echo \"Using simplified build process\" && next build"
   },
