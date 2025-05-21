@@ -1,14 +1,21 @@
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/app/(lib)/db';
 import ChatSession from '@/app/(models)/ChatSession';
 import { successResponse, errorResponse, validateRequestBody } from '@/app/(utils)/api';
 import { getCurrentUser } from '@/app/(utils)/auth';
 import { generateChatResponse } from '@/app/(lib)/openai';
 
+// Define the params type for route handlers
+type RouteParams = {
+  params: {
+    id: string;
+  };
+};
+
 // Get a single chat session by ID
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: RouteParams
 ) {
   try {
     await dbConnect();
@@ -40,7 +47,7 @@ export async function GET(
 // Add a message to an existing chat session
 export async function POST(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: RouteParams
 ) {
   try {
     await dbConnect();
@@ -116,7 +123,7 @@ export async function POST(
 // Delete a chat session
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: RouteParams
 ) {
   try {
     await dbConnect();

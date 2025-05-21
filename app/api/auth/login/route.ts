@@ -46,8 +46,9 @@ export async function POST(req: NextRequest) {
     };
     
     return successResponse({ user: userData, token });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Login error:', error);
-    return errorResponse('Login failed: ' + error.message, 500);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    return errorResponse('Login failed: ' + errorMessage, 500);
   }
 }
