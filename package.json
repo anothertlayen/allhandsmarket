@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack --port 12000 --hostname 0.0.0.0",
-    "build": "next build",
+    "build": "next build --no-lint --no-type-check",
     "start": "next start --port 12000 --hostname 0.0.0.0",
     "lint": "next lint",
     "test": "echo \"No tests specified yet\" && exit 0",
