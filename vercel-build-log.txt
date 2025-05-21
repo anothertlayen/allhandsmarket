@@ -1,0 +1,6 @@
+Build triggered on: 2025-05-21
+Commit: Latest commit with simplified build process
+Build command: npm run vercel-build
+Environment variables:
+- NEXT_PUBLIC_SKIP_TYPE_CHECK: true
+- NEXT_PUBLIC_SKIP_LINT: true
