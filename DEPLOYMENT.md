@@ -197,4 +197,37 @@ If you encounter deployment issues:
 4. Check for any Next.js build errors
 5. Verify your OpenAI API key is valid
 
+### Dealing with Ignored Build Step Issues
+
+If your Git commits are not triggering deployments, it might be related to Vercel's Ignored Build Step configuration:
+
+1. **Check Vercel Project Settings**:
+   - Go to your project in the Vercel dashboard
+   - Navigate to Settings > Git
+   - Review the "Ignored Build Step" configuration
+   - Make sure it's not preventing deployments for your branch
+
+2. **Force a Deployment**:
+   We've included a script to force a deployment by creating a dummy commit:
+   ```bash
+   npm run deploy:force "Your commit message"
+   ```
+   
+3. **Verify Branch Deployment Settings**:
+   In your `vercel.json`, we've added explicit configuration to enable deployments for our branch:
+   ```json
+   "git": {
+     "deploymentEnabled": {
+       "openhands-workspace-dji921zx": true
+     }
+   }
+   ```
+   
+   Make sure this configuration includes your branch name if you're working on a different branch.
+
+4. **Check Vercel Logs**:
+   - In the Vercel dashboard, check the deployment logs
+   - Look for the commit hash being used (e.g., `Cloning github.com/user/repo (Branch: branch-name, Commit: abcd123)`)
+   - Compare this with your latest commit hash using `git rev-parse HEAD`
+
 For more help, refer to [Vercel documentation](https://vercel.com/docs) or [contact Vercel support](https://vercel.com/support).

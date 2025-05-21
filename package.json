@@ -11,6 +11,7 @@
     "deploy": "./scripts/deploy.sh",
     "deploy:preview": "vercel",
     "deploy:prod": "vercel --prod",
+    "deploy:force": "./scripts/force-deploy.sh",
     "setup:env": "./scripts/setup-vercel-env.sh"
   },
   "dependencies": {

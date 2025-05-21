@@ -5,6 +5,11 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
+  "git": {
+    "deploymentEnabled": {
+      "openhands-workspace-dji921zx": true
+    }
+  },
   "env": {
     "MONGODB_URI": "your-mongodb-uri",
     "OPENAI_API_KEY": "your-openai-api-key",
