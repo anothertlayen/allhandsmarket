@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#E5E7EB"/>
+  <polygon points="50,150 150,50 250,150" fill="none" stroke="#4B5563" stroke-width="6"/>
+  <line x1="150" y1="50" x2="150" y2="150" stroke="#4B5563" stroke-width="3"/>
+  <line x1="100" y1="150" x2="200" y2="150" stroke="#4B5563" stroke-width="3"/>
+  <text x="150" y="180" font-family="Arial" font-size="24" text-anchor="middle" fill="#1F2937">Tent</text>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#E5E7EB"/>
+  <line x1="150" y1="50" x2="150" y2="150" stroke="#4B5563" stroke-width="6"/>
+  <path d="M120,50 Q150,20 180,50" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <path d="M100,70 Q150,40 200,70" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <path d="M90,90 Q150,60 210,90" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <rect x="130" y="150" width="40" height="20" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <text x="150" y="180" font-family="Arial" font-size="24" text-anchor="middle" fill="#1F2937">Gardening Tools</text>
+</svg>

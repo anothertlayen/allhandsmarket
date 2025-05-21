@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#E5E7EB"/>
+  <line x1="100" y1="150" x2="100" y2="100" stroke="#4B5563" stroke-width="3"/>
+  <path d="M80,100 Q100,70 120,100" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <path d="M70,110 Q100,80 130,110" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <line x1="200" y1="150" x2="200" y2="90" stroke="#4B5563" stroke-width="3"/>
+  <path d="M180,90 Q200,60 220,90" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <path d="M170,100 Q200,70 230,100" fill="none" stroke="#4B5563" stroke-width="3"/>
+  <rect x="80" y="150" width="40" height="20" fill="none" stroke="#4B5563" stroke-width="2"/>
+  <rect x="180" y="150" width="40" height="20" fill="none" stroke="#4B5563" stroke-width="2"/>
+  <text x="150" y="180" font-family="Arial" font-size="24" text-anchor="middle" fill="#1F2937">Plants</text>
+</svg>

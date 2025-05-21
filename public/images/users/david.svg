@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#10B981"/>
+  <circle cx="100" cy="70" r="40" fill="#FFFFFF"/>
+  <path d="M100 120 C 60 120, 40 160, 40 200 L 160 200 C 160 160, 140 120, 100 120 Z" fill="#FFFFFF"/>
+  <text x="100" y="180" font-family="Arial" font-size="24" text-anchor="middle" fill="#10B981">David</text>
+</svg>
