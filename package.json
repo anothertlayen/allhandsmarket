@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack --port 12000 --hostname 0.0.0.0",
     "build": "next build",
     "start": "next start --port 12000 --hostname 0.0.0.0",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "deploy": "./scripts/deploy.sh",
+    "deploy:preview": "vercel",
+    "deploy:prod": "vercel --prod",
+    "setup:env": "./scripts/setup-vercel-env.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",

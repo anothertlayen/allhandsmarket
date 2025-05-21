@@ -76,6 +76,37 @@ allhandsmarket/
 - `/api/reviews/*` - User reviews
 - `/api/search/*` - Search functionality
 
+## Deployment
+
+### Manual Deployment to Vercel
+
+1. Push your code to GitHub:
+   ```bash
+   git push origin main
+   ```
+
+2. Deploy using our deployment script:
+   ```bash
+   npm run deploy
+   ```
+
+   Or deploy directly with Vercel CLI:
+   ```bash
+   npm run deploy:prod
+   ```
+
+3. Set up environment variables in the Vercel dashboard:
+   - `MONGODB_URI`: Your MongoDB connection string
+   - `OPENAI_API_KEY`: Your OpenAI API key
+   - `NEXTAUTH_SECRET`: A random string for NextAuth.js
+   - `NEXTAUTH_URL`: Your production URL
+
+### Automated Deployment
+
+We've set up GitHub Actions for continuous deployment. When you push to the main branch, your changes will automatically be deployed to Vercel.
+
+For more detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ## Contributing
 
 1. Fork the repository
@@ -92,4 +123,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - OpenAI for providing the AI capabilities
 - Next.js team for the amazing framework
+- Vercel for hosting and deployment
 - All contributors and community members
