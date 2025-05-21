@@ -31,7 +31,7 @@ This guide provides instructions for deploying the AllHandsMarket application to
    In the Vercel project settings, add the following environment variables:
    - `MONGODB_URI`: Your MongoDB connection string
    - `OPENAI_API_KEY`: Your OpenAI API key
-   - `NEXTAUTH_SECRET`: A random string for NextAuth.js (generate with `openssl rand -base64 32`)
+   - `NEXTAUTH_SECRET`: A random string for NextAuth.js (generate with `node -e "console.log(crypto.randomBytes(32).toString('hex'))"` or `openssl rand -hex 32`)
    - `NEXTAUTH_URL`: Your production URL (e.g., https://your-app.vercel.app)
 
 4. **Deploy**:
