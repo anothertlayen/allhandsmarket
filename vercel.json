@@ -10,7 +10,7 @@
       "openhands-workspace-dji921zx": true
     }
   },
-  "ignoreCommand": "exit1",
+  "ignoreCommand": "exit 1",
   "env": {
     "MONGODB_URI": "your-mongodb-uri",
     "OPENAI_API_KEY": "your-openai-api-key",
